@@ -28,8 +28,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null :fales|
-|group_id|integer|null: false|
+|id|integer|null :false|
+|name|strig|null: false|
 ### Association
 - has_many :users, through: :groups_users
 - has_many :messages
@@ -40,7 +40,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null :fales|
+|id|integer|null :false|
 |body|text||
 |image|string||
 |group_id|integer|null: false, foreign_key: true|
