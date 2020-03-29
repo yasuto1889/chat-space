@@ -1,0 +1,22 @@
+.main_content
+  
+  .top_content
+    .top_content__group test
+     
+    
+    = link_to"#", class: "link" do
+      .edit_btn edit
+  .content_chat 
+    .content_chat__name masa
+    .content_chat__time 2019/12/03(wed)17:45
+  .content_message 
+    %input(type ="text")
+  .bottom_content
+    .post_box
+      .post_box__message 
+        %input{type:"text",class:"text_box"}
+        %label{class:"post_box__img"}
+          %input{type:"file",class:"image_file"}
+          = icon('fas','image')
+    %input{type:"submit",class:"submit_btn"}
+        
