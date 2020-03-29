@@ -16,12 +16,12 @@
       width: 260px;
       margin: 0 0 20px 20px;
       
-      .group_name__tech{
+      &__tech{
         font-size: 15px;
         color: #d2d2d2;
         margin: 20px 45px 5px 0;
       }
-      .group_name__message{
+      &__message{
         font-size: 11px;
         color: #d2d2d2;
         margin: 5px 0 0 0 ;
@@ -105,14 +105,31 @@
       width: calc(100vw - 300px);
       display: flex;
       justify-content: space-between;
+
+    
+     
+     
    
-       &__group{
-       font-size: 20px;
-       color: #333333;
-       margin: 35px 0 0 40px;
-       }
-    }
-       
+          &__group{
+          font-size: 20px;
+          color: #333333;
+          margin: 35px 0 0 40px;
+         }
+
+          &__members{
+            font-size: 12px;
+            color: #999999;
+            margin-left: 35px;
+            display: flex;
+
+          }
+          &__members-Member{
+              font-size: 10px;
+              color: #999999;
+              margin: 5px 0 0 5px;
+              
+            }
+            
         .link{
          
           text-decoration: none;
@@ -129,7 +146,7 @@
           line-height: 40px;
           border: solid 1px #38aef0;
         }
-    
+      }
       
 
 
