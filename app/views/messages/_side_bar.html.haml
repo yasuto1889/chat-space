@@ -8,8 +8,10 @@
           = icon('far','edit', class: "group__btn--icon")
         = link_to edit_user_path(current_user), class:"setting__btn" do
           = icon('fas','cog', class: "setting__btn--icon")
-  .group_name
-    .group_name__tech
-      
-    .group_name__message
-      
+  .group_name 
+    - current_user.groups.each do |group|     
+      = link_to group_messages_path(group) do
+        .group_name__tech
+          = group.name
+        .group_name__message
+          = group.show_last_message
