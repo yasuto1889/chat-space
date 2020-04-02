@@ -13,10 +13,8 @@
     
     = link_to edit_group_path(@group),class:"edit_btn" do
       edit
-  .content_chat 
-    .content_chat__name 
-    .content_chat__time 
-  .content_message 
+  
+  .content_messages
     = render @messages
 
   .bottom_content
@@ -28,3 +26,4 @@
           = f.file_field :image, class: 'image_file'
         = f.submit 'Send', class: 'submit_btn'
       
+     
