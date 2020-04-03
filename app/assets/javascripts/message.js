@@ -8,34 +8,19 @@ $(function(){
         var html =
   
         `<div class="message" data-message-id=${message.id}>
-  
           <div class="content_chat">
-  
             <div class="content_chat__name">
-  
               ${message.user_name}
-  
             </div>
-  
             <div class="content_chat__time">
-  
               ${message.created_at}
-  
             </div>
-  
           </div>
-  
           <div class="content_message"">
-  
             ${message.content}
-  
-
           </div>
-  
             <img src=${message.image} >
-  
         </div>`
-  
           return html;
   
       } else {
@@ -43,13 +28,9 @@ $(function(){
         //同様にdata-idが反映されるようにしている
   
         var html =
-  
         `<div class="message" data-message-id=${message.id}>
-  
          <div class="content_chat">
-  
             <div class="content_chat__name">
-  
               ${message.user_name} 
                 </div>
               <div class="content_chat__time">
@@ -113,7 +94,7 @@ $(function(){
         var reloadMessages = function() {
           //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得 
           var last_message_id = $('.message:last').data("message-id");
-          console.log(last_message_id)
+          
           $.ajax({ 
             //ルーティングで設定した通りのURLを指定
             url: "api/messages",
@@ -124,7 +105,6 @@ $(function(){
             data: {id: last_message_id}
           })
           .done(function(content_messages) {
-            console.log(content_messages)
             if (content_messages.length !== 0) {
             //追加するHTMLの入れ物を作る
             var insertHTML = '';
