@@ -66,28 +66,17 @@ $(function(){
       })
   
       .done(function(data){
-  
         var html = buildHTML(data);
-  
-        $('.content_messages').append(html);
-  
-        $('.content_messages').animate({ scrollTop: $('.content_messages')[0].scrollHeight});
-  
-        $('form')[0].reset();   
-  
+          $('.content_messages').append(html);
+           $('.content_messages').animate({ scrollTop: $('.content_messages')[0].scrollHeight});
+            $('form')[0].reset();   
       })
-  
       .fail(function(data){
+        alert("通信に失敗しました");
       })
-  
       .always(function(){
-  
         $('.submit_btn').removeAttr('disabled');
-  
-        
-  
       })
-  
     })
   
       //省略
