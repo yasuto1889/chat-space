@@ -4,11 +4,14 @@
     .top_content-right
       .top_content__group 
         = @group.name
-      .top_content__members
+      
+      .top_content__members 
+        member:
         - @group.users.each do |member| 
           = member.name
-          
-      %p.top_content__members-Member
+      
+        %p.top_content__members-Member
+        
           
     
     = link_to edit_group_path(@group),class:"edit_btn" do

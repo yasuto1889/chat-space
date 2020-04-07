@@ -131,7 +131,7 @@
       display: flex;
       justify-content: space-between;
 
-    
+      
      
      
    
@@ -140,20 +140,24 @@
           color: #333333;
           margin: 35px 0 0 40px;
          }
+         .group_group{
+           font-size: 12px;
+         }
 
           &__members{
             font-size: 12px;
             color: #999999;
-            margin-left: 35px;
+            margin-left: 55px;
             margin-top: 15px;
             display: flex;
+            position: relative;
 
           }
           &__members-Member{
               font-size: 10px;
               color: #999999;
-              margin: 5px 0 0 5px;
-              
+              margin: 5px 50px 0 5px;
+              position: absolute;
             }
             
         .link{
